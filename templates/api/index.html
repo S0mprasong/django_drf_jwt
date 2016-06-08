@@ -1,0 +1,36 @@
+{% extends "api/base.html" %}
+{% block content %}
+<div class="container">
+   <div class="row">
+      <div class="col-md-12 text-right">
+         <a href="/logout">Logout</a>
+      </div>
+   </div>
+   <h2>Profile</h2>
+   <hr/>
+   <div class="row" style="padding: 15px;">
+      <div class="col-md-2">
+         <strong>Name</strong> <span id="username">Loading...</span>
+      </div>
+      <div class="col-md-3">
+         <strong>Email</strong> <span id="email">Loading...</span>
+      </div>
+   </div>
+   <div class="row" style="padding: 15px;">
+      <div class="col-md-2">
+         <strong>First Name</strong> <span id="first_name">Loading...</span>
+      </div>
+      <div class="col-md-3">
+         <strong>Last Name</strong> <span id="last_name">Loading...</span>
+      </div>
+   </div>
+   <div class="row" style="padding: 15px;">
+      <div class="col-md-12">
+         <strong>Last Login</strong> <span id="last_login">Loading...</span>
+      </div>
+   </div>
+</div>
+<script>
+   window.onload = loadProfile;
+</script>
+{% endblock content %}

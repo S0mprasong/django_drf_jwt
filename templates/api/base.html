@@ -1,0 +1,16 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Simple Authentication With Django Rest Framework Json Web Token</title>
+      <script src="{% static "js/jquery-2.2.4.min.js" %}"></script>
+      <script src="{% static "js/bootstrap.min.js" %}"></script>
+      <!-- <script src="{% static "js/js.cookie.js" %}"></script> -->
+      <script src="{% static "js/jquery.cookie.js" %}"></script>
+      <script src="{% static "js/api.pyxspace.js" %}"></script>
+      <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}" />
+   </head>
+   <body>
+      {% block content %}{% endblock content %}
+   </body>
+</html>
