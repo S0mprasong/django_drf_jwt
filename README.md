@@ -1,1 +1,1 @@
-# django_drf_jwt
+# Django Rest Framework Json Web Token
