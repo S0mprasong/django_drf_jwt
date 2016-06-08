@@ -1,7 +1,7 @@
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.template import Context
 from django.template.loader import get_template
 from rest_framework.response import Response
@@ -9,6 +9,8 @@ from rest_framework.views import APIView
 
 from .serializers import UserSerializer
 
+def landing_page(request):
+	return redirect('/login')
 
 def login_page(request):
 	login_template = get_template('api/login.html')

@@ -17,10 +17,11 @@ from django.conf.urls import url
 from django.contrib import admin
 from rest_framework_jwt.views import obtain_jwt_token, refresh_jwt_token
 
-from api.views import login_page, logout_page, home_page, UserProfile
+from api.views import landing_page, login_page, logout_page, home_page, UserProfile
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^$', landing_page),
     url(r'^profile/', home_page),
     url(r'^login/', login_page),
     url(r'^logout/', logout_page),
