@@ -18,7 +18,6 @@ function login() {
         //jquery.cookie.js
         //$.session.set('pyxspace_token_session', data.token);
         $.cookie('pyxspace_token', data.token, { path: '/' , domain: '', secure: false });
-        
         window.location.replace("/profile");
       },
       error: function(XMLHttpRequest, textStatus, errorThrown) {
